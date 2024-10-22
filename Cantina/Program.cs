@@ -16,7 +16,12 @@ namespace Cantina
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSplash());
+            Application.Run(new frmFuncionarios());
         }
+    }
+
+    class Globais
+    {
+        public static string caminhoFotos = caminhoFotos + @"\fotoscadastro\";
     }
 }

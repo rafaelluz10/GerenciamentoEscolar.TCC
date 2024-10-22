@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using MosaicoSolutions.ViaCep;
 using MySql.Data.MySqlClient;
+using System.IO; 
 
 namespace Cantina
 {
@@ -309,6 +310,38 @@ namespace Cantina
             {
                 txtNome.Focus();
             }
+        }
+
+        private void btn_addFoto_Click(object sender, EventArgs e)
+        {
+            string origemCompleto = ""; 
+            string foto = "";
+            string pastaDestino = ""; 
+            string destinoCompleto = "";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                origemCompleto = openFileDialog1.FileName;
+                foto = openFileDialog1.SafeFileName;
+                destinoCompleto = pastaDestino + foto; 
+            }
+            if (File.Exists(destinoCompleto))
+            {
+                if (MessageBox.Show("Arquivo já existe, deseja substituir?", "Substituir", MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    return;
+                }
+            }
+            System.IO.File.Copy(origemCompleto, destinoCompleto, true);
+            if (File.Exists(destinoCompleto))
+            {
+                pb_Foto.ImageLocation = destinoCompleto;
+                MessageBox.Show(destinoCompleto);
+            }
+            else
+            {
+                MessageBox.Show("Arquivo não copiado");
+            }
+
         }
     }
 }

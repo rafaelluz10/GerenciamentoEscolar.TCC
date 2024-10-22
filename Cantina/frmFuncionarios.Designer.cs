@@ -61,8 +61,13 @@ namespace Cantina
             this.lblNome = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pb_Foto = new System.Windows.Forms.PictureBox();
+            this.btn_addFoto = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pnlCRUD.SuspendLayout();
             this.gpbDadosPessoais.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Foto)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCRUD
@@ -172,6 +177,9 @@ namespace Cantina
             // gpbDadosPessoais
             // 
             this.gpbDadosPessoais.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.gpbDadosPessoais.Controls.Add(this.btn_addFoto);
+            this.gpbDadosPessoais.Controls.Add(this.pb_Foto);
+            this.gpbDadosPessoais.Controls.Add(this.label1);
             this.gpbDadosPessoais.Controls.Add(this.lblEstado);
             this.gpbDadosPessoais.Controls.Add(this.cbbEstado);
             this.gpbDadosPessoais.Controls.Add(this.txtCidade);
@@ -387,6 +395,40 @@ namespace Cantina
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1218, 398);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 22;
+            // 
+            // pb_Foto
+            // 
+            this.pb_Foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_Foto.Location = new System.Drawing.Point(1249, 152);
+            this.pb_Foto.Name = "pb_Foto";
+            this.pb_Foto.Size = new System.Drawing.Size(85, 113);
+            this.pb_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_Foto.TabIndex = 23;
+            this.pb_Foto.TabStop = false;
+            // 
+            // btn_addFoto
+            // 
+            this.btn_addFoto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_addFoto.Location = new System.Drawing.Point(1222, 98);
+            this.btn_addFoto.Name = "btn_addFoto";
+            this.btn_addFoto.Size = new System.Drawing.Size(143, 35);
+            this.btn_addFoto.TabIndex = 24;
+            this.btn_addFoto.Text = "Adicionando Foto";
+            this.btn_addFoto.UseVisualStyleBackColor = true;
+            this.btn_addFoto.Click += new System.EventHandler(this.btn_addFoto_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "JPG(*.jpg)|*.jpg|PNG(*.png)|*.png";
+            // 
             // frmFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -404,6 +446,7 @@ namespace Cantina
             this.pnlCRUD.ResumeLayout(false);
             this.gpbDadosPessoais.ResumeLayout(false);
             this.gpbDadosPessoais.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Foto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -441,5 +484,9 @@ namespace Cantina
         private System.Windows.Forms.ComboBox cbbEstado;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label lblCidade;
+        private System.Windows.Forms.Button btn_addFoto;
+        private System.Windows.Forms.PictureBox pb_Foto;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
