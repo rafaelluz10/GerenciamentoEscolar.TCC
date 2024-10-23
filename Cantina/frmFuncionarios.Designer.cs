@@ -39,6 +39,9 @@ namespace Cantina
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.gpbDadosPessoais = new System.Windows.Forms.GroupBox();
+            this.btn_addFoto = new System.Windows.Forms.Button();
+            this.pb_Foto = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblEstado = new System.Windows.Forms.Label();
             this.cbbEstado = new System.Windows.Forms.ComboBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
@@ -61,9 +64,6 @@ namespace Cantina
             this.lblNome = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pb_Foto = new System.Windows.Forms.PictureBox();
-            this.btn_addFoto = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pnlCRUD.SuspendLayout();
             this.gpbDadosPessoais.SuspendLayout();
@@ -79,17 +79,17 @@ namespace Cantina
             this.pnlCRUD.Controls.Add(this.btnAlterar);
             this.pnlCRUD.Controls.Add(this.btnCadastrar);
             this.pnlCRUD.Controls.Add(this.btnNovo);
-            this.pnlCRUD.Location = new System.Drawing.Point(12, 709);
+            this.pnlCRUD.Location = new System.Drawing.Point(4, 524);
             this.pnlCRUD.Name = "pnlCRUD";
-            this.pnlCRUD.Size = new System.Drawing.Size(1424, 101);
+            this.pnlCRUD.Size = new System.Drawing.Size(1270, 91);
             this.pnlCRUD.TabIndex = 20;
             // 
             // btnVoltar
             // 
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
-            this.btnVoltar.Location = new System.Drawing.Point(1241, 10);
+            this.btnVoltar.Location = new System.Drawing.Point(1098, 24);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(167, 73);
+            this.btnVoltar.Size = new System.Drawing.Size(120, 44);
             this.btnVoltar.TabIndex = 27;
             this.btnVoltar.Text = "&Voltar";
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -100,9 +100,9 @@ namespace Cantina
             // btnLimpar
             // 
             this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
-            this.btnLimpar.Location = new System.Drawing.Point(1044, 10);
+            this.btnLimpar.Location = new System.Drawing.Point(903, 24);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(160, 73);
+            this.btnLimpar.Size = new System.Drawing.Size(114, 44);
             this.btnLimpar.TabIndex = 26;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -112,9 +112,9 @@ namespace Cantina
             // btnPesquisar
             // 
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
-            this.btnPesquisar.Location = new System.Drawing.Point(835, 11);
+            this.btnPesquisar.Location = new System.Drawing.Point(701, 24);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(167, 72);
+            this.btnPesquisar.Size = new System.Drawing.Size(114, 44);
             this.btnPesquisar.TabIndex = 25;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -125,9 +125,9 @@ namespace Cantina
             // btnExcluir
             // 
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
-            this.btnExcluir.Location = new System.Drawing.Point(631, 11);
+            this.btnExcluir.Location = new System.Drawing.Point(526, 24);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(164, 72);
+            this.btnExcluir.Size = new System.Drawing.Size(110, 44);
             this.btnExcluir.TabIndex = 24;
             this.btnExcluir.Text = "&Excluir";
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -138,9 +138,9 @@ namespace Cantina
             // btnAlterar
             // 
             this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
-            this.btnAlterar.Location = new System.Drawing.Point(436, 10);
+            this.btnAlterar.Location = new System.Drawing.Point(372, 24);
             this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(155, 73);
+            this.btnAlterar.Size = new System.Drawing.Size(105, 44);
             this.btnAlterar.TabIndex = 23;
             this.btnAlterar.Text = "&Alterar";
             this.btnAlterar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -151,9 +151,9 @@ namespace Cantina
             // btnCadastrar
             // 
             this.btnCadastrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.Image")));
-            this.btnCadastrar.Location = new System.Drawing.Point(232, 10);
+            this.btnCadastrar.Location = new System.Drawing.Point(194, 24);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(164, 74);
+            this.btnCadastrar.Size = new System.Drawing.Size(116, 44);
             this.btnCadastrar.TabIndex = 22;
             this.btnCadastrar.Text = "&Cadastrar";
             this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -164,9 +164,9 @@ namespace Cantina
             // btnNovo
             // 
             this.btnNovo.Image = ((System.Drawing.Image)(resources.GetObject("btnNovo.Image")));
-            this.btnNovo.Location = new System.Drawing.Point(27, 10);
+            this.btnNovo.Location = new System.Drawing.Point(27, 24);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(170, 73);
+            this.btnNovo.Size = new System.Drawing.Size(108, 44);
             this.btnNovo.TabIndex = 21;
             this.btnNovo.Text = "&Novo";
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -206,11 +206,40 @@ namespace Cantina
             this.gpbDadosPessoais.ForeColor = System.Drawing.SystemColors.Control;
             this.gpbDadosPessoais.Location = new System.Drawing.Point(4, 16);
             this.gpbDadosPessoais.Name = "gpbDadosPessoais";
-            this.gpbDadosPessoais.Size = new System.Drawing.Size(1432, 671);
+            this.gpbDadosPessoais.Size = new System.Drawing.Size(1270, 502);
             this.gpbDadosPessoais.TabIndex = 1;
             this.gpbDadosPessoais.TabStop = false;
             this.gpbDadosPessoais.Text = "Dados pessoais";
             this.gpbDadosPessoais.Enter += new System.EventHandler(this.gpbDadosPessoais_Enter);
+            // 
+            // btn_addFoto
+            // 
+            this.btn_addFoto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_addFoto.Location = new System.Drawing.Point(981, 300);
+            this.btn_addFoto.Name = "btn_addFoto";
+            this.btn_addFoto.Size = new System.Drawing.Size(143, 35);
+            this.btn_addFoto.TabIndex = 24;
+            this.btn_addFoto.Text = "Adicionar Foto";
+            this.btn_addFoto.UseVisualStyleBackColor = true;
+            this.btn_addFoto.Click += new System.EventHandler(this.btn_addFoto_Click);
+            // 
+            // pb_Foto
+            // 
+            this.pb_Foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_Foto.Location = new System.Drawing.Point(972, 93);
+            this.pb_Foto.Name = "pb_Foto";
+            this.pb_Foto.Size = new System.Drawing.Size(152, 183);
+            this.pb_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_Foto.TabIndex = 23;
+            this.pb_Foto.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1218, 398);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 22;
             // 
             // lblEstado
             // 
@@ -396,35 +425,6 @@ namespace Cantina
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1218, 398);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 20);
-            this.label1.TabIndex = 22;
-            // 
-            // pb_Foto
-            // 
-            this.pb_Foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_Foto.Location = new System.Drawing.Point(1087, 148);
-            this.pb_Foto.Name = "pb_Foto";
-            this.pb_Foto.Size = new System.Drawing.Size(278, 293);
-            this.pb_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_Foto.TabIndex = 23;
-            this.pb_Foto.TabStop = false;
-            // 
-            // btn_addFoto
-            // 
-            this.btn_addFoto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_addFoto.Location = new System.Drawing.Point(1157, 88);
-            this.btn_addFoto.Name = "btn_addFoto";
-            this.btn_addFoto.Size = new System.Drawing.Size(143, 35);
-            this.btn_addFoto.TabIndex = 24;
-            this.btn_addFoto.Text = "Adicionando Foto";
-            this.btn_addFoto.UseVisualStyleBackColor = true;
-            this.btn_addFoto.Click += new System.EventHandler(this.btn_addFoto_Click);
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -435,7 +435,7 @@ namespace Cantina
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1448, 822);
+            this.ClientSize = new System.Drawing.Size(1286, 636);
             this.Controls.Add(this.gpbDadosPessoais);
             this.Controls.Add(this.pnlCRUD);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
