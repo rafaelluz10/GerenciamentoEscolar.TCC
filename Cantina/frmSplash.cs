@@ -50,5 +50,10 @@ namespace Cantina
             int MenuCount = GetMenuItemCount(hMenu) - 1;
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
+
+        private void pgbSplah_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -37,7 +37,7 @@ namespace Cantina
             this.btnFornecedores = new System.Windows.Forms.Button();
             this.btnConfiguracoes = new System.Windows.Forms.Button();
             this.btnRelatorios = new System.Windows.Forms.Button();
-            this.btnVendas = new System.Windows.Forms.Button();
+            this.btnAlunos = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -67,7 +67,7 @@ namespace Cantina
             this.btnFuncionarios.Name = "btnFuncionarios";
             this.btnFuncionarios.Size = new System.Drawing.Size(265, 250);
             this.btnFuncionarios.TabIndex = 1;
-            this.btnFuncionarios.Text = "&Funcionários";
+            this.btnFuncionarios.Text = "&Cadastro de Funcionários";
             this.btnFuncionarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnFuncionarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnFuncionarios.UseVisualStyleBackColor = true;
@@ -79,14 +79,15 @@ namespace Cantina
             this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.SystemColors.Control;
             this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
-            this.btnClientes.Location = new System.Drawing.Point(336, 35);
+            this.btnClientes.Location = new System.Drawing.Point(649, 320);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(265, 250);
+            this.btnClientes.Size = new System.Drawing.Size(285, 229);
             this.btnClientes.TabIndex = 2;
             this.btnClientes.Text = "&Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnProdutos
             // 
@@ -139,29 +140,29 @@ namespace Cantina
             this.btnRelatorios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRelatorios.ForeColor = System.Drawing.SystemColors.Control;
             this.btnRelatorios.Image = ((System.Drawing.Image)(resources.GetObject("btnRelatorios.Image")));
-            this.btnRelatorios.Location = new System.Drawing.Point(649, 320);
+            this.btnRelatorios.Location = new System.Drawing.Point(331, 320);
             this.btnRelatorios.Name = "btnRelatorios";
-            this.btnRelatorios.Size = new System.Drawing.Size(285, 229);
+            this.btnRelatorios.Size = new System.Drawing.Size(274, 229);
             this.btnRelatorios.TabIndex = 7;
             this.btnRelatorios.Text = "&Relatórios";
             this.btnRelatorios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnRelatorios.UseVisualStyleBackColor = true;
             // 
-            // btnVendas
+            // btnAlunos
             // 
-            this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVendas.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnVendas.Image = ((System.Drawing.Image)(resources.GetObject("btnVendas.Image")));
-            this.btnVendas.Location = new System.Drawing.Point(336, 320);
-            this.btnVendas.Name = "btnVendas";
-            this.btnVendas.Size = new System.Drawing.Size(265, 229);
-            this.btnVendas.TabIndex = 6;
-            this.btnVendas.Text = "&Vendas";
-            this.btnVendas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnVendas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnVendas.UseVisualStyleBackColor = true;
+            this.btnAlunos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlunos.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAlunos.Image = ((System.Drawing.Image)(resources.GetObject("btnAlunos.Image")));
+            this.btnAlunos.Location = new System.Drawing.Point(331, 35);
+            this.btnAlunos.Name = "btnAlunos";
+            this.btnAlunos.Size = new System.Drawing.Size(274, 250);
+            this.btnAlunos.TabIndex = 6;
+            this.btnAlunos.Text = "&Cadastro de Alunos";
+            this.btnAlunos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAlunos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAlunos.UseVisualStyleBackColor = true;
             // 
             // btnUsuarios
             // 
@@ -173,7 +174,7 @@ namespace Cantina
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(265, 229);
             this.btnUsuarios.TabIndex = 5;
-            this.btnUsuarios.Text = "&Usuários";
+            this.btnUsuarios.Text = "&Criação de Login";
             this.btnUsuarios.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnUsuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnUsuarios.UseVisualStyleBackColor = true;
@@ -187,7 +188,7 @@ namespace Cantina
             this.ClientSize = new System.Drawing.Size(1390, 632);
             this.Controls.Add(this.btnConfiguracoes);
             this.Controls.Add(this.btnRelatorios);
-            this.Controls.Add(this.btnVendas);
+            this.Controls.Add(this.btnAlunos);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.btnFornecedores);
             this.Controls.Add(this.btnProdutos);
@@ -215,7 +216,7 @@ namespace Cantina
         private System.Windows.Forms.Button btnFornecedores;
         private System.Windows.Forms.Button btnConfiguracoes;
         private System.Windows.Forms.Button btnRelatorios;
-        private System.Windows.Forms.Button btnVendas;
+        private System.Windows.Forms.Button btnAlunos;
         private System.Windows.Forms.Button btnUsuarios;
     }
 }

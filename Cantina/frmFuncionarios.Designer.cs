@@ -406,9 +406,9 @@ namespace Cantina
             // pb_Foto
             // 
             this.pb_Foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_Foto.Location = new System.Drawing.Point(1249, 152);
+            this.pb_Foto.Location = new System.Drawing.Point(1087, 148);
             this.pb_Foto.Name = "pb_Foto";
-            this.pb_Foto.Size = new System.Drawing.Size(85, 113);
+            this.pb_Foto.Size = new System.Drawing.Size(278, 293);
             this.pb_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_Foto.TabIndex = 23;
             this.pb_Foto.TabStop = false;
@@ -416,7 +416,7 @@ namespace Cantina
             // btn_addFoto
             // 
             this.btn_addFoto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_addFoto.Location = new System.Drawing.Point(1222, 98);
+            this.btn_addFoto.Location = new System.Drawing.Point(1157, 88);
             this.btn_addFoto.Name = "btn_addFoto";
             this.btn_addFoto.Size = new System.Drawing.Size(143, 35);
             this.btn_addFoto.TabIndex = 24;
@@ -427,7 +427,7 @@ namespace Cantina
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "JPG(*.jpg)|*.jpg|PNG(*.png)|*.png";
+            this.openFileDialog1.Filter = "JPG(*.jpg)|*.jpg|PNG(*.png)|*.png|JPEG(*.jpeg)|*.jpeg";
             // 
             // frmFuncionarios
             // 

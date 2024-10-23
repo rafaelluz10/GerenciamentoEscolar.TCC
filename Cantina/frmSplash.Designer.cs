@@ -53,7 +53,7 @@ namespace Cantina
             // 
             this.lblValor.AutoSize = true;
             this.lblValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValor.Location = new System.Drawing.Point(734, 517);
+            this.lblValor.Location = new System.Drawing.Point(734, 503);
             this.lblValor.Name = "lblValor";
             this.lblValor.Size = new System.Drawing.Size(18, 20);
             this.lblValor.TabIndex = 1;
@@ -66,12 +66,13 @@ namespace Cantina
             this.pgbSplah.Size = new System.Drawing.Size(839, 22);
             this.pgbSplah.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pgbSplah.TabIndex = 2;
+            this.pgbSplah.Click += new System.EventHandler(this.pgbSplah_Click);
             // 
             // lblPorcentagem
             // 
             this.lblPorcentagem.AutoSize = true;
             this.lblPorcentagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorcentagem.Location = new System.Drawing.Point(758, 517);
+            this.lblPorcentagem.Location = new System.Drawing.Point(758, 503);
             this.lblPorcentagem.Name = "lblPorcentagem";
             this.lblPorcentagem.Size = new System.Drawing.Size(23, 20);
             this.lblPorcentagem.TabIndex = 3;
@@ -80,7 +81,7 @@ namespace Cantina
             // tmrSplash
             // 
             this.tmrSplash.Enabled = true;
-            this.tmrSplash.Interval = 2000;
+            this.tmrSplash.Interval = 4000;
             this.tmrSplash.Tick += new System.EventHandler(this.tmrSplash_Tick);
             // 
             // frmSplash
