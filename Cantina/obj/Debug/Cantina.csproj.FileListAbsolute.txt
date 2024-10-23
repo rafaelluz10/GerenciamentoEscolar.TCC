@@ -166,3 +166,4 @@ C:\Users\Laboratorio-Info\Documents\ProjetoGerenciamentoEscolar.ETEC\Cantina\obj
 C:\Users\Laboratorio-Info\Documents\ProjetoGerenciamentoEscolar.ETEC\Cantina\obj\Debug\Cantina.csproj.CopyComplete
 C:\Users\Laboratorio-Info\Documents\ProjetoGerenciamentoEscolar.ETEC\Cantina\obj\Debug\Cantina.exe
 C:\Users\Laboratorio-Info\Documents\ProjetoGerenciamentoEscolar.ETEC\Cantina\obj\Debug\Cantina.pdb
+C:\Users\Laboratorio-Info\Documents\ProjetoGerenciamentoEscolar.ETEC\Cantina\obj\Debug\Cantina.frmAlunos.resources

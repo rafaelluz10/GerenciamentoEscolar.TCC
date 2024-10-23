@@ -343,5 +343,10 @@ namespace Cantina
             }
 
         }
+
+        private void gpbDadosPessoais_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
