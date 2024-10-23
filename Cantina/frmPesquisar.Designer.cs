@@ -101,9 +101,9 @@ namespace Cantina
             this.ltbPesquisar.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.ltbPesquisar.ForeColor = System.Drawing.SystemColors.Window;
             this.ltbPesquisar.FormattingEnabled = true;
-            this.ltbPesquisar.Location = new System.Drawing.Point(78, 387);
+            this.ltbPesquisar.Location = new System.Drawing.Point(78, 369);
             this.ltbPesquisar.Name = "ltbPesquisar";
-            this.ltbPesquisar.Size = new System.Drawing.Size(754, 303);
+            this.ltbPesquisar.Size = new System.Drawing.Size(754, 238);
             this.ltbPesquisar.TabIndex = 4;
             this.ltbPesquisar.SelectedIndexChanged += new System.EventHandler(this.ltbPesquisar_SelectedIndexChanged);
             // 
@@ -111,9 +111,9 @@ namespace Cantina
             // 
             this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
-            this.btnPesquisar.Location = new System.Drawing.Point(967, 95);
+            this.btnPesquisar.Location = new System.Drawing.Point(971, 115);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(320, 259);
+            this.btnPesquisar.Size = new System.Drawing.Size(242, 182);
             this.btnPesquisar.TabIndex = 5;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -124,9 +124,9 @@ namespace Cantina
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
-            this.btnLimpar.Location = new System.Drawing.Point(967, 406);
+            this.btnLimpar.Location = new System.Drawing.Point(971, 369);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(320, 273);
+            this.btnLimpar.Size = new System.Drawing.Size(250, 186);
             this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -138,7 +138,7 @@ namespace Cantina
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1420, 776);
+            this.ClientSize = new System.Drawing.Size(1290, 630);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.ltbPesquisar);

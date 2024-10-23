@@ -64,6 +64,19 @@ namespace Cantina
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.lblRg = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.ggbDadosCadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Foto)).BeginInit();
             this.pnlCRUD.SuspendLayout();
@@ -72,6 +85,19 @@ namespace Cantina
             // ggbDadosCadastro
             // 
             this.ggbDadosCadastro.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ggbDadosCadastro.Controls.Add(this.label7);
+            this.ggbDadosCadastro.Controls.Add(this.textBox2);
+            this.ggbDadosCadastro.Controls.Add(this.label6);
+            this.ggbDadosCadastro.Controls.Add(this.maskedTextBox4);
+            this.ggbDadosCadastro.Controls.Add(this.maskedTextBox3);
+            this.ggbDadosCadastro.Controls.Add(this.label5);
+            this.ggbDadosCadastro.Controls.Add(this.label4);
+            this.ggbDadosCadastro.Controls.Add(this.maskedTextBox2);
+            this.ggbDadosCadastro.Controls.Add(this.label3);
+            this.ggbDadosCadastro.Controls.Add(this.textBox1);
+            this.ggbDadosCadastro.Controls.Add(this.label2);
+            this.ggbDadosCadastro.Controls.Add(this.lblRg);
+            this.ggbDadosCadastro.Controls.Add(this.maskedTextBox1);
             this.ggbDadosCadastro.Controls.Add(this.btn_addFoto);
             this.ggbDadosCadastro.Controls.Add(this.pb_Foto);
             this.ggbDadosCadastro.Controls.Add(this.lblEstado);
@@ -100,7 +126,7 @@ namespace Cantina
             this.ggbDadosCadastro.ForeColor = System.Drawing.SystemColors.Control;
             this.ggbDadosCadastro.Location = new System.Drawing.Point(12, 12);
             this.ggbDadosCadastro.Name = "ggbDadosCadastro";
-            this.ggbDadosCadastro.Size = new System.Drawing.Size(1252, 480);
+            this.ggbDadosCadastro.Size = new System.Drawing.Size(1244, 462);
             this.ggbDadosCadastro.TabIndex = 0;
             this.ggbDadosCadastro.TabStop = false;
             this.ggbDadosCadastro.Text = "Dados de Cadastro";
@@ -108,7 +134,7 @@ namespace Cantina
             // btn_addFoto
             // 
             this.btn_addFoto.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_addFoto.Location = new System.Drawing.Point(988, 300);
+            this.btn_addFoto.Location = new System.Drawing.Point(1046, 250);
             this.btn_addFoto.Name = "btn_addFoto";
             this.btn_addFoto.Size = new System.Drawing.Size(143, 35);
             this.btn_addFoto.TabIndex = 29;
@@ -118,7 +144,7 @@ namespace Cantina
             // pb_Foto
             // 
             this.pb_Foto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_Foto.Location = new System.Drawing.Point(988, 104);
+            this.pb_Foto.Location = new System.Drawing.Point(1043, 53);
             this.pb_Foto.Name = "pb_Foto";
             this.pb_Foto.Size = new System.Drawing.Size(146, 181);
             this.pb_Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,7 +154,7 @@ namespace Cantina
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(366, 399);
+            this.lblEstado.Location = new System.Drawing.Point(378, 239);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(60, 20);
             this.lblEstado.TabIndex = 27;
@@ -138,7 +164,7 @@ namespace Cantina
             // 
             this.cbbEstado.FormattingEnabled = true;
             this.cbbEstado.ItemHeight = 20;
-            this.cbbEstado.Location = new System.Drawing.Point(367, 422);
+            this.cbbEstado.Location = new System.Drawing.Point(444, 234);
             this.cbbEstado.Name = "cbbEstado";
             this.cbbEstado.Size = new System.Drawing.Size(172, 28);
             this.cbbEstado.TabIndex = 26;
@@ -146,7 +172,7 @@ namespace Cantina
             // lblCidade
             // 
             this.lblCidade.AutoSize = true;
-            this.lblCidade.Location = new System.Drawing.Point(17, 401);
+            this.lblCidade.Location = new System.Drawing.Point(17, 239);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(59, 20);
             this.lblCidade.TabIndex = 25;
@@ -154,7 +180,7 @@ namespace Cantina
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(21, 424);
+            this.txtCidade.Location = new System.Drawing.Point(82, 236);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(275, 26);
             this.txtCidade.TabIndex = 24;
@@ -162,7 +188,7 @@ namespace Cantina
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
-            this.lblBairro.Location = new System.Drawing.Point(631, 326);
+            this.lblBairro.Location = new System.Drawing.Point(706, 185);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(51, 20);
             this.lblBairro.TabIndex = 23;
@@ -170,7 +196,7 @@ namespace Cantina
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(635, 349);
+            this.txtBairro.Location = new System.Drawing.Point(763, 182);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(211, 26);
             this.txtBairro.TabIndex = 22;
@@ -178,7 +204,7 @@ namespace Cantina
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
-            this.lblNumero.Location = new System.Drawing.Point(486, 326);
+            this.lblNumero.Location = new System.Drawing.Point(521, 185);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(65, 20);
             this.lblNumero.TabIndex = 21;
@@ -186,7 +212,7 @@ namespace Cantina
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(490, 349);
+            this.txtNumero.Location = new System.Drawing.Point(592, 182);
             this.txtNumero.MaxLength = 10;
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(86, 26);
@@ -195,7 +221,7 @@ namespace Cantina
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 326);
+            this.label1.Location = new System.Drawing.Point(17, 188);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 20);
             this.label1.TabIndex = 19;
@@ -203,7 +229,7 @@ namespace Cantina
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(21, 349);
+            this.txtEndereco.Location = new System.Drawing.Point(101, 185);
             this.txtEndereco.MaxLength = 100;
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(385, 26);
@@ -212,7 +238,7 @@ namespace Cantina
             // lblCEP
             // 
             this.lblCEP.AutoSize = true;
-            this.lblCEP.Location = new System.Drawing.Point(385, 236);
+            this.lblCEP.Location = new System.Drawing.Point(641, 134);
             this.lblCEP.Name = "lblCEP";
             this.lblCEP.Size = new System.Drawing.Size(41, 20);
             this.lblCEP.TabIndex = 16;
@@ -220,7 +246,7 @@ namespace Cantina
             // 
             // mskCEP
             // 
-            this.mskCEP.Location = new System.Drawing.Point(389, 259);
+            this.mskCEP.Location = new System.Drawing.Point(688, 131);
             this.mskCEP.Mask = "00000-000";
             this.mskCEP.Name = "mskCEP";
             this.mskCEP.Size = new System.Drawing.Size(96, 26);
@@ -229,7 +255,7 @@ namespace Cantina
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Location = new System.Drawing.Point(207, 236);
+            this.lblTelefone.Location = new System.Drawing.Point(417, 134);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(71, 20);
             this.lblTelefone.TabIndex = 14;
@@ -237,7 +263,7 @@ namespace Cantina
             // 
             // mskTelefone
             // 
-            this.mskTelefone.Location = new System.Drawing.Point(211, 259);
+            this.mskTelefone.Location = new System.Drawing.Point(490, 131);
             this.mskTelefone.Mask = "99999-9999";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(97, 26);
@@ -245,7 +271,7 @@ namespace Cantina
             // 
             // mskCPF
             // 
-            this.mskCPF.Location = new System.Drawing.Point(21, 259);
+            this.mskCPF.Location = new System.Drawing.Point(74, 134);
             this.mskCPF.Mask = "000,000,000-00";
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.Size = new System.Drawing.Size(119, 26);
@@ -254,7 +280,7 @@ namespace Cantina
             // lblCPF
             // 
             this.lblCPF.AutoSize = true;
-            this.lblCPF.Location = new System.Drawing.Point(17, 236);
+            this.lblCPF.Location = new System.Drawing.Point(25, 137);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(40, 20);
             this.lblCPF.TabIndex = 11;
@@ -262,7 +288,7 @@ namespace Cantina
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(490, 157);
+            this.txtEmail.Location = new System.Drawing.Point(557, 81);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(289, 26);
             this.txtEmail.TabIndex = 10;
@@ -270,7 +296,7 @@ namespace Cantina
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(486, 134);
+            this.lblEmail.Location = new System.Drawing.Point(498, 84);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(53, 20);
             this.lblEmail.TabIndex = 9;
@@ -279,7 +305,7 @@ namespace Cantina
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(17, 134);
+            this.lblNome.Location = new System.Drawing.Point(17, 84);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(51, 20);
             this.lblNome.TabIndex = 5;
@@ -287,7 +313,7 @@ namespace Cantina
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(21, 157);
+            this.txtNome.Location = new System.Drawing.Point(74, 84);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(385, 26);
             this.txtNome.TabIndex = 4;
@@ -295,7 +321,7 @@ namespace Cantina
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(17, 41);
+            this.lblCodigo.Location = new System.Drawing.Point(17, 31);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(59, 20);
             this.lblCodigo.TabIndex = 3;
@@ -303,7 +329,7 @@ namespace Cantina
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(21, 64);
+            this.txtCodigo.Location = new System.Drawing.Point(82, 31);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 26);
             this.txtCodigo.TabIndex = 2;
@@ -322,7 +348,7 @@ namespace Cantina
             this.pnlCRUD.Controls.Add(this.btnAlterar);
             this.pnlCRUD.Controls.Add(this.btnCadastrar);
             this.pnlCRUD.Controls.Add(this.btnNovo);
-            this.pnlCRUD.Location = new System.Drawing.Point(12, 509);
+            this.pnlCRUD.Location = new System.Drawing.Point(12, 489);
             this.pnlCRUD.Name = "pnlCRUD";
             this.pnlCRUD.Size = new System.Drawing.Size(1244, 101);
             this.pnlCRUD.TabIndex = 21;
@@ -411,6 +437,115 @@ namespace Cantina
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNovo.UseVisualStyleBackColor = true;
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(276, 134);
+            this.maskedTextBox1.Mask = "99999-9999";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(97, 26);
+            this.maskedTextBox1.TabIndex = 30;
+            // 
+            // lblRg
+            // 
+            this.lblRg.AutoSize = true;
+            this.lblRg.Location = new System.Drawing.Point(236, 134);
+            this.lblRg.Name = "lblRg";
+            this.lblRg.Size = new System.Drawing.Size(34, 20);
+            this.lblRg.TabIndex = 31;
+            this.lblRg.Text = "RG";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 293);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 20);
+            this.label2.TabIndex = 32;
+            this.label2.Text = "Informações Adicionais";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(132, 332);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(385, 26);
+            this.textBox1.TabIndex = 33;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(25, 335);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 20);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "Responsável";
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(599, 329);
+            this.maskedTextBox2.Mask = "000,000,000-00";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(119, 26);
+            this.maskedTextBox2.TabIndex = 35;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(553, 332);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 20);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "CPF";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(750, 332);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 20);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "RG";
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.Location = new System.Drawing.Point(790, 329);
+            this.maskedTextBox3.Mask = "99999-9999";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(97, 26);
+            this.maskedTextBox3.TabIndex = 38;
+            // 
+            // maskedTextBox4
+            // 
+            this.maskedTextBox4.Location = new System.Drawing.Point(102, 379);
+            this.maskedTextBox4.Mask = "99999-9999";
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            this.maskedTextBox4.Size = new System.Drawing.Size(97, 26);
+            this.maskedTextBox4.TabIndex = 39;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(25, 382);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(71, 20);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "Telefone";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(297, 379);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(289, 26);
+            this.textBox2.TabIndex = 41;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(238, 382);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 20);
+            this.label7.TabIndex = 42;
+            this.label7.Text = "E-mail";
+            // 
             // frmAlunos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -419,6 +554,7 @@ namespace Cantina
             this.ClientSize = new System.Drawing.Size(1270, 618);
             this.Controls.Add(this.pnlCRUD);
             this.Controls.Add(this.ggbDadosCadastro);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAlunos";
             this.Text = "frmAlunos";
             this.ggbDadosCadastro.ResumeLayout(false);
@@ -465,5 +601,18 @@ namespace Cantina
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblRg;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox4;
     }
 }
